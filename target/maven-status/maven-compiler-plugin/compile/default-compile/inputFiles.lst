@@ -1,0 +1,11 @@
+D:\IDEA\zuoye\consultants\src\main\java\com\example\consultants\controller\ChatController.java
+D:\IDEA\zuoye\consultants\src\main\java\com\example\consultants\aiservice\ConsultantService.java
+D:\IDEA\zuoye\consultants\src\main\java\com\example\consultants\entity\Reservation.java
+D:\IDEA\zuoye\consultants\src\main\java\com\example\consultants\mapper\ReservationMapper.java
+D:\IDEA\zuoye\consultants\src\main\java\com\example\consultants\tool\ReservationTool.java
+D:\IDEA\zuoye\consultants\src\main\java\com\example\consultants\config\AiServiceConfig.java
+D:\IDEA\zuoye\consultants\src\main\java\com\example\consultants\config\DocumentInitializer.java
+D:\IDEA\zuoye\consultants\src\main\java\com\example\consultants\ConsultantsApplication.java
+D:\IDEA\zuoye\consultants\src\main\java\com\example\consultants\service\ReservationService.java
+D:\IDEA\zuoye\consultants\src\main\java\com\example\consultants\repository\RedisChatMemoryStore.java
+D:\IDEA\zuoye\consultants\src\main\java\com\example\consultants\config\CommonConfig.java

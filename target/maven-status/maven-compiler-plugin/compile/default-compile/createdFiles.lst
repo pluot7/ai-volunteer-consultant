@@ -1,0 +1,11 @@
+com\example\consultants\config\AiServiceConfig.class
+com\example\consultants\controller\ChatController.class
+com\example\consultants\config\CommonConfig.class
+com\example\consultants\repository\RedisChatMemoryStore.class
+com\example\consultants\aiservice\ConsultantService.class
+com\example\consultants\config\DocumentInitializer.class
+com\example\consultants\tool\ReservationTool.class
+com\example\consultants\ConsultantsApplication.class
+com\example\consultants\entity\Reservation.class
+com\example\consultants\service\ReservationService.class
+com\example\consultants\mapper\ReservationMapper.class
