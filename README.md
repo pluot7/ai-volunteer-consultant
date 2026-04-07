@@ -34,7 +34,41 @@
 
 ### 运行步骤
 
-1. 克隆项目
+1.克隆项目
 ```bash
 git clone https://github.com/你的用户名/consultants.git
 cd consultants
+
+2.配置数据库
+sql
+CREATE DATABASE volunteer;
+
+3.修改配置（可选）
+yaml
+ application.yml 中的数据库密码
+
+4.启动项目
+bash
+mvn spring-boot:run
+
+5访问
+浏览器打开: http://localhost:8080
+📁 项目结构
+consultants/
+├── src/main/java/com/example/consultants/
+│   ├── aiservice/      # AI 服务接口
+│   ├── config/         # 配置类
+│   ├── controller/     # 控制器
+│   ├── entity/         # 实体类
+│   ├── mapper/         # MyBatis Mapper
+│   ├── repository/    # Redis 仓储
+│   └── service/       # 业务服务
+├── src/main/resources/
+│   ├── content/        # PDF 文档（院校信息）
+│   ├── static/        # 前端页面
+│   └── system.txt     # AI 系统提示词
+└── pom.xml
+⚠️ 注意事项
+本项目使用本地 Ollama 模型，需提前安装并下载模型
+推荐使用 qwen2.5:7b 或其他支持中文的模型
+Redis 用于向量存储和会话记忆
