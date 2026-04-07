@@ -18,9 +18,14 @@ import dev.langchain4j.store.embedding.redis.RedisEmbeddingStore;
 import dev.langchain4j.store.memory.chat.ChatMemoryStore;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.support.ResourcePatternResolver;
+import org.springframework.core.io.support.ResourcePatternUtils;
 
+import java.io.IOException;
 import java.time.Duration;
 
 @Slf4j
@@ -29,6 +34,11 @@ public class CommonConfig {
 
     @Autowired
     private ChatMemoryStore redisChatMemoryStore;
+
+    @Bean
+    public ResourcePatternResolver resourcePatternResolver() {
+        return ResourcePatternUtils.getResourcePatternResolver(null);
+    }
 
     // ================== Ollama 聊天模型 ==================
     @Bean
