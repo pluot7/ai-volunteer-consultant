@@ -45,7 +45,7 @@ public class CommonConfig {
     public ChatLanguageModel ollamaChatModel() {
         return OllamaChatModel.builder()
                 .baseUrl("http://localhost:11434")
-                .modelName("qwen2.5:7b")
+                .modelName("qwen3:8b")
                 .temperature(0.7)
                 .timeout(Duration.ofMinutes(3))
                 .build();
@@ -55,7 +55,7 @@ public class CommonConfig {
     public StreamingChatLanguageModel ollamaStreamingChatModel() {
         return OllamaStreamingChatModel.builder()
                 .baseUrl("http://localhost:11434")
-                .modelName("qwen2.5:7b")
+                .modelName("qwen3:8b")
                 .temperature(0.7)
                 .timeout(Duration.ofMinutes(3))
                 .build();
