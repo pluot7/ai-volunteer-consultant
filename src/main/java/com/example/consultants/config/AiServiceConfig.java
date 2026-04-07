@@ -26,7 +26,7 @@ public class AiServiceConfig {
                 .streamingChatLanguageModel(ollamaStreamingChatModel)
                 .chatMemoryProvider(chatMemoryProvider)
                 .contentRetriever(contentRetriever)
-//                .tools(reservationTool)
+                .tools(reservationTool)
                 .build();
     }
 }
